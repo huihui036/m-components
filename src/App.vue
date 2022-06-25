@@ -4,7 +4,7 @@
  * @Autor: Xqh
  * @Date: 2022-06-25 09:50:09
  * @LastEditors: Xqh
- * @LastEditTime: 2022-06-25 11:19:12
+ * @LastEditTime: 2022-06-25 16:38:34
 -->
 <script setup lang="ts">
 </script>
@@ -14,16 +14,7 @@
 </template>
 
 <style lang="scss">
-*{
-  padding: 0;
-  margin: 0;
-}
-svg{
-  height: 1em;
-  width: 1em;
-  cursor: pointer;
-}
-html,body,#app,.el-container,.el-menu{
-height: 100%;
-}
+@import './style/ui';
+@import './style/bassi';
+
 </style>
