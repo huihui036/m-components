@@ -4,7 +4,7 @@
  * @Autor: Xqh
  * @Date: 2022-06-25 14:07:16
  * @LastEditors: Xqh
- * @LastEditTime: 2022-06-25 16:55:59
+ * @LastEditTime: 2022-07-12 12:43:44
 -->
 <template>
   <el-button @click="handleClick" type="primary">图标选择</el-button>
@@ -33,8 +33,8 @@
 <script lang="ts" setup>
 import { watch, ref } from 'vue'
 import * as ElementPlusIcon from '@element-plus/icons-vue'
-import { toLine } from '../../utils'
-import { useCopy } from '../../hooks/iseCopy'  
+import { toLine } from '../../../utils'
+import { useCopy } from '../../../hooks/iseCopy'  
 
 let props = defineProps<{
   title: string

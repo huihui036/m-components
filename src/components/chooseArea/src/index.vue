@@ -4,7 +4,7 @@
  * @Autor: Xqh
  * @Date: 2022-07-10 22:28:25
  * @LastEditors: Xqh
- * @LastEditTime: 2022-07-11 22:10:14
+ * @LastEditTime: 2022-07-12 12:46:15
 -->
 <template>
   <div>
@@ -49,7 +49,7 @@
 <script lang="ts" setup>
 import { ref, watch } from 'vue'
 
-import allAreas from './lib/pcas-code.json'
+import allAreas from '../lib/pcas-code.json'
 
 export interface AreaItem {
   code: string
