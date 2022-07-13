@@ -4,17 +4,35 @@
  * @Autor: Xqh
  * @Date: 2022-07-13 07:57:55
  * @LastEditors: Xqh
- * @LastEditTime: 2022-07-13 08:03:42
+ * @LastEditTime: 2022-07-13 23:43:41
 -->
 <template>
-  <div>
+  <div class="flex">
     <m-trend></m-trend>
+    <m-trend
+      text="季度销售额"
+      type="down"
+      texColor="pink"
+      iconColor="red"
+    ></m-trend>
+
+    <m-trend text="季度销售额" type="down" :reverseColor="true"></m-trend>
+
+    <m-trend>
+      <p>年度销售</p>
+    </m-trend>
+
+    <m-trend text="季度销售额" type="down" Icon="CaretBottom"></m-trend>
+    <m-trend text="季度销售额" type="up" Icon="CaretTop"></m-trend>
   </div>
 </template>
 
-<script lang='ts' setup>
-
-</script>
-<style>
-
+<script lang="ts" setup></script>
+<style scoped lang="scss">
+.flex {
+  display: flex;
+  div {
+    margin-right: 10px;
+  }
+}
 </style>
