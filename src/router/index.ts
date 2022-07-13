@@ -4,7 +4,7 @@
  * @Autor: Xqh
  * @Date: 2022-06-25 09:59:08
  * @LastEditors: Xqh
- * @LastEditTime: 2022-07-10 22:36:48
+ * @LastEditTime: 2022-07-13 07:59:13
  */
 import {
   createMemoryHistory,
@@ -16,6 +16,7 @@ import home from '../views/home.vue'
 import container from '../components/container/index.vue'
 import chooseIcon from '../views/chooseIcon/index.vue'
 import chooseArea from '../views/chooseArea/index.vue'
+import trend from '../views/trend/index.vue'
 const routes: RouteRecordRaw[] = [
   {
     path: '/',
@@ -33,6 +34,10 @@ const routes: RouteRecordRaw[] = [
       {
         path: '/chooseArea',
         component: chooseArea,
+      },
+      {
+        path: '/trend',
+        component: trend,
       },
     ],
   },
