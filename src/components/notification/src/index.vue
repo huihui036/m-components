@@ -4,11 +4,11 @@
  * @Autor: Xqh
  * @Date: 2022-07-17 14:24:33
  * @LastEditors: Xqh
- * @LastEditTime: 2022-07-17 16:01:12
+ * @LastEditTime: 2022-07-23 11:26:31
 -->
 <template>
   <div>
-    <el-popover placement="bottom" trigger="click" :width="200">
+    <el-popover placement="bottom" trigger="click" :width="300">
       <template #default>
        <slot></slot>
       </template>

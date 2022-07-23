@@ -4,7 +4,7 @@
  * @Autor: Xqh
  * @Date: 2022-06-25 09:50:09
  * @LastEditors: Xqh
- * @LastEditTime: 2022-06-25 16:38:34
+ * @LastEditTime: 2022-07-23 12:32:50
 -->
 <script setup lang="ts">
 </script>
@@ -16,5 +16,7 @@
 <style lang="scss">
 @import './style/ui';
 @import './style/bassi';
-
+.el-popper{
+    padding: 0 !important;
+  }
 </style>
