@@ -4,7 +4,7 @@
  * @Autor: Xqh
  * @Date: 2022-06-25 09:59:08
  * @LastEditors: Xqh
- * @LastEditTime: 2022-07-13 07:59:13
+ * @LastEditTime: 2022-07-24 10:05:41
  */
 import {
   createMemoryHistory,
@@ -18,6 +18,7 @@ import chooseIcon from '../views/chooseIcon/index.vue'
 import chooseArea from '../views/chooseArea/index.vue'
 import trend from '../views/trend/index.vue'
 import notification from '../views/notification/index.vue'
+import menu from '../views/menu/index.vue'
 const routes: RouteRecordRaw[] = [
   {
     path: '/',
@@ -42,8 +43,11 @@ const routes: RouteRecordRaw[] = [
       },
       {
         path: '/notification',
-        component:notification,
-
+        component: notification,
+      },
+      {
+        path: '/menu',
+        component: menu,
       },
     ],
   },

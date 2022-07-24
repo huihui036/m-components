@@ -4,7 +4,7 @@
  * @Autor: Xqh
  * @Date: 2022-07-12 12:50:02
  * @LastEditors: Xqh
- * @LastEditTime: 2022-07-23 10:56:56
+ * @LastEditTime: 2022-07-24 09:51:30
  */
 import { App } from 'vue'
 import chooseArea from './chooseArea'
@@ -12,7 +12,8 @@ import chooseIcon from './chooseIcons'
 import notification from './notification'
 import list from './list'
 import trend from './trend'
-const components = [chooseArea, chooseIcon, trend, notification, list]
+import menu from './menu'
+const components = [chooseArea, chooseIcon, trend, notification, list,menu]
 
 export default {
   install(app: App) {
