@@ -4,11 +4,16 @@
  * @Autor: Xqh
  * @Date: 2022-07-24 09:44:36
  * @LastEditors: Xqh
- * @LastEditTime: 2022-07-24 10:31:01
+ * @LastEditTime: 2022-07-24 15:37:57
 -->
 <template>
   <div>
-    <el-menu :default-active="defaultActive" :router="router" v-bind="$attrs">
+    <el-menu
+      class="el-menu-vertical-demo"
+      :default-active="defaultActive"
+      :router="router"
+      v-bind="$attrs"
+    >
       <template v-for="(item, index) in data" :key="item.index">
         <!-- 第一层 -->
         <el-menu-item
@@ -50,8 +55,7 @@
 import { PropType } from 'vue'
 import { MenuItem } from './types'
 import { toLine } from '../../../utils'
-import { stringifyQuery } from 'vue-router'
-import { fa } from 'element-plus/lib/locale'
+
 let props = defineProps({
   data: {
     type: Array as PropType<MenuItem[]>,
@@ -68,4 +72,8 @@ let props = defineProps({
 })
 console.log(props.data)
 </script>
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.el-menu-vertical-demo:not(.el-menu--collapse) {
+  width: 200px;
+}
+</style>
