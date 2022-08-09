@@ -4,7 +4,7 @@
  * @Autor: Xqh
  * @Date: 2022-06-25 09:59:08
  * @LastEditors: Xqh
- * @LastEditTime: 2022-07-24 10:05:41
+ * @LastEditTime: 2022-08-06 13:25:44
  */
 import {
   createMemoryHistory,
@@ -19,6 +19,8 @@ import chooseArea from '../views/chooseArea/index.vue'
 import trend from '../views/trend/index.vue'
 import notification from '../views/notification/index.vue'
 import menu from '../views/menu/index.vue'
+import progress from '../views/progress/index.vue'
+import Form from '../views/form/index.vue'
 const routes: RouteRecordRaw[] = [
   {
     path: '/',
@@ -48,6 +50,14 @@ const routes: RouteRecordRaw[] = [
       {
         path: '/menu',
         component: menu,
+      },
+      {
+        path: '/progress',
+        component: progress,
+      },
+      {
+        path: '/form',
+        component: Form,
       },
     ],
   },

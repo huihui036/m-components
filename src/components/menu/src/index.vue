@@ -4,7 +4,7 @@
  * @Autor: Xqh
  * @Date: 2022-07-24 09:44:36
  * @LastEditors: Xqh
- * @LastEditTime: 2022-07-24 15:37:57
+ * @LastEditTime: 2022-07-27 23:10:16
 -->
 <template>
   <div>
@@ -73,6 +73,11 @@ let props = defineProps({
 console.log(props.data)
 </script>
 <style scoped lang="scss">
+svg{
+  height: 1em;
+  width: 1em;
+  margin-right: 4px;
+}
 .el-menu-vertical-demo:not(.el-menu--collapse) {
   width: 200px;
 }
